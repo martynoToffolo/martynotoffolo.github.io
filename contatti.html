@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Contatti | Sentieri</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" id="cookiebanner" src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <img src="img/logo.png" alt="Logo Sentieri" class="logo-img" height="40" style="height: 40px; width: auto;">
+    <h1>Sentieri </h1>
+  </div>
+
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="itinerari.html" >Itinerari</a>
+    <a href="contatti.html" class="attivo">Contatti</a>
+  </nav>
+</header>
+<main class="contenuto-principale">
+<h2>Contattaci</h2>
+
+<div class="galleria">
+  <figure>
+    <img src="img/logo.svg" alt="Logo Sentieri">
+    <figcaption>Il nostro logo (immagine locale)</figcaption>
+  </figure>
+  <figure>
+    <img src="https://picsum.photos/id/1039/600/400" alt="Cascata">
+    <figcaption>Una cascata (immagine dal web)</figcaption>
+  </figure>
+</div>
+
+<form onsubmit="event.preventDefault(); alert('Messaggio inviato (demo)!');">
+  <label>Nome</label><input type="text" required>
+  <label>Email</label><input type="email" required>
+  <label>Messaggio</label><textarea rows="5" required></textarea>
+  <!-- stile ridefinito con attributo style -->
+  <button class="btn" type="submit" style="background:#3f6150;">Invia</button>
+</form>
+</main>
+</body>
+</html>

@@ -1,0 +1,256 @@
+/* ==========================================
+   Variabili globali e Reset
+   ========================================== */
+:root {
+  --verde: #2b4a3b;
+  --verde2: #3f6150;
+  --chiaro: #e8f6ee;
+  --accento: #e07a3f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #22312a;
+  background: var(--chiaro);
+  line-height: 1.6;
+}
+
+
+/* ==========================================
+   Header e Navigazione
+   ========================================== */
+header {
+  background: var(--verde);
+  color: #fff;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Forziamo il PNG a rimanere piccolo */
+.logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 150px; /* Evita che si allarghi troppo */
+  object-fit: contain;
+  display: block;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: .2s;
+}
+
+nav a:hover,
+nav a.attivo {
+  border-bottom-color: var(--accento);
+}
+
+
+/* ==========================================
+   Layout Principale
+   ========================================== */
+
+h2 {
+  color: var(--verde2);
+  border-left: 6px solid var(--accento);
+  padding-left: .7rem;
+}
+
+
+/* ==========================================
+   Sezione Hero & Bottoni
+   ========================================== */
+.hero {
+  /* Imposta l'altezza all'intero schermo visibile meno l'altezza dell'header */
+  min-height: calc(100vh - 70px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  
+  background-image: url('img/pexels-enginakyurt-10364444.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*BOTTONE 
+---------------------*/
+.btn {
+  display: inline-block;
+  background: var(--accento);
+  color: #fff;
+  padding: .7rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: #c4622b;
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   Galleria Immagini
+   ========================================== */
+
+.contenuto-principale {
+  max-width: 950px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.galleria {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.galleria figure {
+  flex: 1;
+  margin: 0;
+  background: #fff;
+  padding: .6rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+.galleria img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.galleria figcaption {
+  text-align: center;
+  font-size: .9rem;
+  padding-top: .5rem;
+  color: #555;
+}
+
+
+/* ==========================================
+   Componente Card
+   ========================================== */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+.card h3 {
+  margin: .2rem 0;
+  color: var(--verde);
+}
+
+
+/* ==========================================
+   Tabelle
+   ========================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+th {
+  background: var(--verde2);
+  color: #fff;
+}
+
+th, td {
+  padding: .7rem 1rem;
+  text-align: left;
+}
+
+tr:nth-child(even) td {
+  background: #f3faf6;
+}
+
+
+/* ==========================================
+   Form e Input
+   ========================================== */
+form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+label {
+  display: block;
+  margin-top: .8rem;
+  font-weight: bold;
+}
+
+input, 
+textarea {
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid #b9cfc3;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form button {
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   Footer
+   ========================================== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--verde);
+  color: #cfe3d7;
+  margin-top: 3rem;
+  font-size: .9rem;
+}
