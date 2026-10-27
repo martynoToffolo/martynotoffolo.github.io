@@ -1,6 +1,5 @@
-/* ==========================================
-   Variabili globali e Reset
-   ========================================== */
+
+/*salvo i colori per tutto il file html per comodita*/
 :root {
   --verde: #2b4a3b;
   --verde2: #3f6150;
@@ -21,9 +20,8 @@ body {
 }
 
 
-/* ==========================================
-   Header e Navigazione
-   ========================================== */
+/* Header e Navigazione
+------------------------------------ */
 header {
   background: var(--verde);
   color: #fff;
@@ -39,7 +37,7 @@ header {
   gap: 0.8rem;
 }
 
-/* Forziamo il PNG a rimanere piccolo */
+/* Forzo il PNG a rimanere piccolo */
 .logo-img {
   height: 40px;
   width: auto;
@@ -64,15 +62,11 @@ nav a {
   transition: .2s;
 }
 
+/*quando ci vado sopra con il mouse*/
 nav a:hover,
 nav a.attivo {
   border-bottom-color: var(--accento);
 }
-
-
-/* ==========================================
-   Layout Principale
-   ========================================== */
 
 h2 {
   color: var(--verde2);
@@ -81,9 +75,8 @@ h2 {
 }
 
 
-/* ==========================================
-   Sezione Hero & Bottoni
-   ========================================== */
+/* Hero & Bottoni
+----------------------------------------------*/
 .hero {
   /* Imposta l'altezza all'intero schermo visibile meno l'altezza dell'header */
   min-height: calc(100vh - 70px); 
@@ -126,12 +119,11 @@ h2 {
 }
 
 
-/* ==========================================
-   Galleria Immagini
-   ========================================== */
+/*Galleria Immagini
+-------------------------------------*/
 
 .contenuto-principale {
-  max-width: 950px;
+  max-width: 1050px;
   margin: 3rem auto;
   padding: 0 1.5rem;
 }
@@ -167,9 +159,8 @@ h2 {
 }
 
 
-/* ==========================================
-   Componente Card
-   ========================================== */
+/*componente Card 
+------------------------------------*/
 .card {
   background: #fff;
   border-radius: 10px;
@@ -184,9 +175,8 @@ h2 {
 }
 
 
-/* ==========================================
-   Tabelle
-   ========================================== */
+/* Tabelle 
+------------------------------------------*/
 table {
   width: 100%;
   border-collapse: collapse;
@@ -206,14 +196,8 @@ th, td {
   text-align: left;
 }
 
-tr:nth-child(even) td {
-  background: #f3faf6;
-}
-
-
-/* ==========================================
-   Form e Input
-   ========================================== */
+/*Form e Input
+-------------------------------------------*/
 form {
   background: #fff;
   padding: 1.5rem;
@@ -243,9 +227,8 @@ form button {
 }
 
 
-/* ==========================================
-   Footer
-   ========================================== */
+/* Footer 
+-----------------------------------------------------*/
 footer {
   text-align: center;
   padding: 1.5rem;
